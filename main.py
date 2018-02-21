@@ -14,7 +14,7 @@ class Number:
         return self.number % 2 == 0
 
 
-def main():
+def main():  # pragma: no cover
     t = Text('Very interesting MeSsAgE')
     print(f'{t.message} vs {t.upper()}')
 
