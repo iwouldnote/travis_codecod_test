@@ -15,3 +15,10 @@ def test_even(value):
 def test_odd(value):
     number = Number(value)
     assert not number.is_even()
+
+@pytest.mark.parametrize('value', [1, 500, 293, 2839, 19191991919, 292, 0, 19, 3, 999])
+def test_increase_by_one(value):
+    number = Number(value)
+    old_value = number.number
+    number.increase_by_one()
+    assert number.number == old_value + 1
