@@ -4,7 +4,7 @@ python:
 install:
   - pip install -r requirements.txt
 cache:
-  pip
+  - pip
 script:
-  pytest --cov=./
-  codecov --token=8a985ccc-0b5d-4f61-8ce0-eb622dc99787
+  - pytest --cov=./
+  - codecov --token=8a985ccc-0b5d-4f61-8ce0-eb622dc99787
