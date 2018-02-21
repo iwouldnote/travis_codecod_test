@@ -13,6 +13,9 @@ class Number:
     def is_even(self):
         return self.number % 2 == 0
 
+    def increase_by_one(self):
+        self.number += 1
+
 
 def main():  # pragma: no cover
     t = Text('Very interesting MeSsAgE')
