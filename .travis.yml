@@ -1,10 +1,13 @@
 language: python
 python:
-  - '3.6'
+- '3.6'
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 cache:
-  - pip
+- pip
 script:
-  - pytest --cov=./
-  - codecov --token=8a985ccc-0b5d-4f61-8ce0-eb622dc99787
+- pytest --cov=./
+- codecov --token=8a985ccc-0b5d-4f61-8ce0-eb622dc99787
+notifications:
+  slack:
+    secure: CPSdwIKXFSqeTyqIHH6HNizqxQvCunZHSGFZb6dsN9XDdPxVRmaG+ldPfNhFEdGlW4G3F3M0gQkW4cQ15k/mKZBUAHME9mWyCP2Pnm6EfYVu6k9skJ51wWZrnlsSbyHUnCXMt9iba00rNrGqophKnOix0mn8buoBwftueWzbNsnRIF4xSvzvJ94eYSfJdJiPG2LceSM9aqZ0bl2eiuRPKlhl5JRvX2NCipfM6Lmel7Rgbazfrc81yJggOzJ0IGMh2a4STjHf0FRcDV9pFGkVymsIN3sdC60S/YXTNYfnPAX7xU0arkSsw9xIKsfCoCtbmO7YnBG4oje0Ytxs4Q9L6SJat+TGDmaF1T3qPHzpCDZ3eK0hBH/556jCF6S2fGbP0AZFlkagf92N8xDGxU9oXB7713YgHvoA2LifR3TyqjwZgBfxj5yMi7rIzCxherlSWVnxpgMVoU/LE3QellZyRMOreuEIZ4AIRgPnHRzhtOla7tyb0i3qwqVyO1NInQu/qBMujLjfqWpLM1GDiMHQcFOI3T8ik45H3PPkLCQtTAB1YIRwEfDUmo8OUig+1HS3ARr00MD2ImOX8l4VQpB4jsSMWsUFhGZza8XLLPZ8jjSld7NTGPrrrfXVeRiY1llUHZoTVtZjwXXliyIjyWJaGHFU+ewtaHdiMGcKVqg2QYA=
