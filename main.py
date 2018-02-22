@@ -24,6 +24,9 @@ def main():  # pragma: no cover
     n = Number(222)
     print(n.is_even)
 
+    n = Number(333)
+    print(n.is_even())
+
 
 if __name__ == '__main__':
     main()
