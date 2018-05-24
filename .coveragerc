@@ -1,5 +1,7 @@
 [run]
-omit = test_classes.py
+omit = 
+    test_classes.py
+    test_mocking.py
 
 [report]
 # Regexes for lines to exclude from consideration
